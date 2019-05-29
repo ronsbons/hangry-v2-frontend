@@ -1,1 +1,0 @@
-# hangry-v2-frontend
