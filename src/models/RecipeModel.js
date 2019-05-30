@@ -10,3 +10,4 @@ class RecipeModel {
   };
 };
 
+export default RecipeModel;
