@@ -4,11 +4,15 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 // import other components
+import Navbar from './Navbar.js';
 
 // import './App.css';
 
 class App extends Component {
   // state
+  state = {
+    isLoggedIn: false,
+  }
 
   // component lifecycle methods
   componentDidMount() {
@@ -18,9 +22,24 @@ class App extends Component {
     });
   };
 
+  // change state to isLoggedIn false
+  handleLogout = (event) => {
+    this.setState({
+      isLoggedIn: false,
+    });
+  };
+
+  // axios call to get all recipes
+
   render() {
     return (
-      <p>hello world</p>
+      <div className="app-container">
+        <Navbar handleLogout={this.handleLogout} isLoggedIn={this.state.isLoggedIn} />
+        <h1>Hangry</h1>
+        <p>(insert search bar here)</p>
+
+        {/* iterate through recipes and create recipe cards */}
+      </div>
     );
   };
 };
