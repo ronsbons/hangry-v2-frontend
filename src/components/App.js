@@ -5,6 +5,7 @@ import axios from 'axios';
 
 // import other components
 import Navbar from './Navbar.js';
+import LandingContainer from '../containers/LandingContainer.js';
 
 // import './App.css';
 
@@ -38,7 +39,14 @@ class App extends Component {
         <h1>Hangry</h1>
         <p>(insert search bar here)</p>
 
-        {/* iterate through recipes and create recipe cards */}
+        <div className="component-container">
+          <Switch>
+            <Route exact path="/"
+                    render={() => {
+                      <LandingContainer />
+                    }} />
+          </Switch>
+        </div>
       </div>
     );
   };
