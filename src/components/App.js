@@ -4,7 +4,6 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 // import other components
-import Navbar from './Navbar.js';
 import LandingContainer from '../containers/LandingContainer.js';
 
 // import './App.css';
@@ -35,17 +34,13 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <Navbar handleLogout={this.handleLogout} isLoggedIn={this.state.isLoggedIn} />
         <h1>Hangry</h1>
-        <p>(insert search bar here)</p>
 
         <div className="component-container">
-          <Switch>
-            <Route exact path="/"
-                    render={() => {
-                      <LandingContainer />
-                    }} />
-          </Switch>
+          <Route exact path="/"
+                  render={() => {
+                    return <LandingContainer />
+                  }} />
         </div>
       </div>
     );
