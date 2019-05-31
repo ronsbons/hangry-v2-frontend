@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <h1>Hangry</h1>
+        <h1 className="is-size-1 is-centered">Hangry</h1>
 
         <div className="component-container">
           <Route exact path="/"
