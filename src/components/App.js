@@ -10,9 +10,9 @@ import LandingContainer from '../containers/LandingContainer.js';
 
 class App extends Component {
   // state
-  state = {
-    isLoggedIn: false,
-  }
+  // state = {
+  //   isLoggedIn: false,
+  // }
 
   // component lifecycle methods
   componentDidMount() {
@@ -23,18 +23,18 @@ class App extends Component {
   };
 
   // change state to isLoggedIn false
-  handleLogout = (event) => {
-    this.setState({
-      isLoggedIn: false,
-    });
-  };
+  // handleLogout = (event) => {
+  //   this.setState({
+  //     isLoggedIn: false,
+  //   });
+  // };
 
   // axios call to get all recipes
 
   render() {
     return (
       <div className="app-container">
-        <h1 className="is-size-1 is-centered">Hangry</h1>
+        <h1 className="is-size-1 has-text-centered">Hangry</h1>
 
         <div className="component-container">
           <Route exact path="/"
