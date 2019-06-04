@@ -1,68 +1,42 @@
+# Hangry v2
+## Overview
+Hangry v2 began as a refactor of a previous group project written in Python.  My original intention was to rebuild it using JavaScript and React, but unfortunately due to time, I had to scale back.
+
+Hangry v2 is currently a personal concept project to quickly show a user recipes based on an ingredient.  I wanted to create this project to practice using an external API and to continue working with React.
+
+## Technologies Used
+Languages
+- HTML
+- CSS
+- JavaScript
+
+Frameworks
+- Bulma.css
+
+Libraries
+- React.js
+
+Packages
+- axios
+
+External API
+- Edamam
+
+## Installation
+There is no backend associated with this project yet.
+
+To utilize the external API, you will need to register for the [Edamam Recipe Search API](https://developer.edamam.com/edamam-recipe-api) to receive an app id and app key and substitute yours into the axios call written in the RecipeModel.js file.
+
+You can run this application locally by cloning this repo, installing its dependencies, and running `npm start`.
+
+## User Stories and Wireframes
+User stories and wireframes can be found at this project's [Trello board](https://trello.com/b/zjNzd5QR/wdi-51-alumni-project), including plans for a larger scope version of the planned Hangry refactor.
+
+## Future Features
+- Improved styling
+- Full refactor of Hangry including my own backend server and database
+- Atlas hosted MongoDB
+- User registration and authorization
+- Search functionality of user's created recipes
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
