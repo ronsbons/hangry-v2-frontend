@@ -2,7 +2,7 @@
 ## Overview
 Hangry v2 began as a refactor of a [previous group project](https://project-hangry.herokuapp.com/) written in Python.  My original intention was to rebuild it using JavaScript and React, but unfortunately due to time, I had to scale back.
 
-Hangry v2 is currently a personal concept project to quickly show a user recipes based on an ingredient.  I wanted to create this project to practice using an external API and to continue working with React.
+Hangry v2 is currently a personal concept project to quickly show a few recipes based on an ingredient search.  I wanted to create this project to practice using an external API and to continue working with React.
 
 Original project for reference: [Hangry app](https://project-hangry.herokuapp.com/), [GitHub repo](https://github.com/ch264/hangry)
 
